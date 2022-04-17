@@ -1,36 +1,44 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'PT Sans', sans-serif;
 }
 
-html,
-body {
-    font-size: 18px;
-    background-color: #607d8b;
-}
-
-h1 {
-    max-width: 940px;
-    font-size: 2.5em;
-    font-family: Lato, sans-serif;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 40px 0;
-}
-
-.App {
-    min-height: 100vh;
+.home,
+.about,
+.trabajos,
+.contacto {
     display: flex;
-    flex-wrap: wrap;
+    height: 90vh;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    font-size: 3rem;
 }
 
-.contenedor {
-    min-height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
+.about {
+    background-image: url('../public/img/foto1.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+}
+
+.trabajos {
+    background-image: url('../public/img/pankaj-patel-_SgRNwAVNKw-unsplash.jpeg');
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
+}
+
+.contacto {
+    background-image: url('../public/img/pexels-luis-gomes-546819.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 100px;
 }

@@ -1,24 +1,80 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
+import React, { useState, useEffect } from 'react';
+import { Button } from './Button';
+import { Link } from 'react-router-dom';
+import '../styleSheet/Navbar.css'; 
 
-export default function Navbar() {
+
+function Navbar() {
+  const [click, setClick] = useState(false);
+  const [button, setButton] = useState(true);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
+
+  useEffect(() => {
+    showButton();
+  }, []);
+
+  window.addEventListener('resize', showButton);
+
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
-        <Toolbar variant="dense">
-          <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" color="inherit" component="div">
-            Portafolio
-          </Typography>
-        </Toolbar>
-      </AppBar>
-    </Box>
+    <>
+      <nav className='navbar'>
+        <div className='navbar-container'>
+          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            TRVL
+            <i class='fab fa-typo3'/>
+          </Link>
+          <div className='menu-icon' onClick={handleClick}>
+            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+          </div>
+          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <li className='nav-item'>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                Home
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/about'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Sobre mi 
+              </Link>
+            </li>
+            <li className='nav-item'>
+              <Link
+                to='/trabajos'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Trabajos
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/contacto'
+                className='nav-links-mobile'
+                onClick={closeMobileMenu}
+              >
+                Contacto
+              </Link>
+            </li>
+          </ul>
+          {button && <Button buttonStyle='btn--outline'>H</Button>}
+        </div>
+      </nav>
+    </>
   );
 }
+
+export default Navbar;
