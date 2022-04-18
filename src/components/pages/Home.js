@@ -1,14 +1,18 @@
 import React from 'react';
 import '../../App.css';
-import Cards from '../Card';
 import Hero from '../Hero';
+import Skill from '../Skill'
 import Footer from '../Footer';
+import Portafolio from '../Portafolio';
+import Galeria from '../Galeria';
 
 function Home() {
   return (
     <>
     <Hero/>
-    <Cards />
+    <Skill/>
+    <Portafolio/>
+    <Galeria/>
     <Footer />
     </>
   );

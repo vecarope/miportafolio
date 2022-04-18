@@ -1,6 +1,17 @@
 import React from 'react';
 import '../../App.css';
+import '../../styleSheet/Trabajos.css'; 
+import Footer from '../Footer'
+import Card from '../Card'
 
-export default function Trabajos() {
-return <h1 className='trabajos'>Trabajos</h1>;
+function Trabajos() {
+    return(
+    <div>
+    <h1 className='trabajos'>Portafolio Web</h1>
+    <Card/>
+    <Footer/>
+    </div>
+); 
 }
+
+export default Trabajos; 
