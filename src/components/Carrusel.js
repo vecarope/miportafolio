@@ -1,86 +1,20 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import '../styleSheet/Carrusel.css';
 
-const Carrusel = (props) => {
-    const {children} = props
-
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const [length, setLength] = useState(children.length)
-
-    const [touchPosition, setTouchPosition] = useState(null)
-
-    useEffect(() => {
-        setLength(children.length)
-    }, [children])
-
-    const next = () => {
-        if (currentIndex < (length - 1)) {
-            setCurrentIndex(prevState => prevState + 1)
-        }
-    }
-
-    const prev = () => {
-        if (currentIndex > 0) {
-            setCurrentIndex(prevState => prevState - 1)
-        }
-    }
-
-    const handleTouchStart = (e) => {
-        const touchDown = e.touches[0].clientX
-        setTouchPosition(touchDown)
-    }
-
-    const handleTouchMove = (e) => {
-        const touchDown = touchPosition
-
-        if(touchDown === null) {
-            return
-        }
-
-        const currentTouch = e.touches[0].clientX
-        const diff = touchDown - currentTouch
-
-        if (diff > 5) {
-            next()
-        }
-
-        if (diff < -5) {
-            prev()
-        }
-
-        setTouchPosition(null)
-    }
-
+function Carrusel() {
     return (
-        <div className="carousel-container">
-            <div className="carousel-wrapper">
-                {
-                    currentIndex > 0 &&
-                    <button onClick={prev} className="left-arrow">
-                        &lt;
-                    </button>
-                }
-                <div
-                    className="carousel-content-wrapper"
-                    onTouchStart={handleTouchStart}
-                    onTouchMove={handleTouchMove}
-                >
-                    <div
-                        className="carousel-content"
-                        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-                    >
-                        {children}
-                    </div>
-                </div>
-                {
-                    currentIndex < (length - 1) &&
-                    <button onClick={next} className="right-arrow">
-                        &gt;
-                    </button>
-                }
-            </div>
-        </div>
-    )
+      <div className='logos-container'>
+      <img src="../logos/html.png" alt="html" />
+      <img src="../logos/js.png" alt="js" />
+      <img src="../logos/css.png" alt="css" />
+      <img src="../logos/git.png" alt="git" />
+      <img src="../logos/vue.png" alt="vue" />
+      <img src="../logos/react.png" alt="react" />
+      <img src="../logos/python.png" alt="python" />
+      <img src="../logos/figma.png" alt="figma" />
+      <img src="../logos/ps.png" alt="ps" />
+      </div>
+); 
 }
 
 export default Carrusel;
