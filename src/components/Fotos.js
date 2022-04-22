@@ -15,7 +15,8 @@ export default function QuiltedImageList() {
   return (
     <ImageList
       sx={{ width: 1000, height:600}}
-      variant="quilted"
+      vari
+ant="quilted"
       cols={6}
       rowHeight={121}
     >
@@ -31,7 +32,6 @@ export default function QuiltedImageList() {
     </ImageList>
   );
 }
-
 const itemData = [
   {
     img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
@@ -67,10 +67,15 @@ const itemData = [
   {
     img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
     title: 'Basketball',
+    cols:2,
   },
   {
     img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
     title: 'Fern',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+    title: 'Burger',
   },
   {
     img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
@@ -82,38 +87,22 @@ const itemData = [
     img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
     title: 'Bike',
     cols: 2,
-  },
- {img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-    title: 'Bike',
+  },{
+    img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+    title: 'Mushrooms',
+    rows: 2,
     cols: 2,
+  },
+
+
+{
+  img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+  title: 'Fern',
+},
+{
+  img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+  title: 'Fern',
 },
 
-  { img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-    title: 'Tomato basil',
-    rows: 2,
-    cols: 2,
-},
-  {
-    img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-    title: 'Sea star',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-    title: 'Breakfast',
-    rows: 2,
-    cols: 2,
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-    title: 'Burger',
-  },
-  {
-    img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-    title: 'Fern',
-  },
 
 ];

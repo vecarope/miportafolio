@@ -1,18 +1,34 @@
 import React from "react";
+import { motion } from "framer-motion";
 import '../App.css'; 
-import '../styleSheet/Skill.css'; 
-import Carrusel from "./Carrusel"
-
-
+import '../styleSheet/Carrusel.css';
+import Logos from './Logos'; 
+import { useRef , useEffect, useState } from 'react'; 
 
 function Skill() {
+  const [width, setWidth] = useState(0);
+  const carrusel= useRef(); 
+
+  useEffect(()=> {
+    setWidth(carrusel.current.scrollWidth - carrusel.current.offsetWidth); 
+  }, []);
     return(
         <div className='skill-container'>
         <h1>Mis Skills</h1>
-        
-        <div style={{ maxWidth: 1000, marginLeft: 'auto', marginRight: 'auto', marginTop: 60}}>
-            <Carrusel/>
-        </div>
+        <motion.div ref={carrusel} className="carrusel" whileTap={{cursor:'grabbing'}}>
+        <motion.div
+        drag="x"
+        dragConstraints={{right:0, left:-width}}
+        className="inner-carrusel">
+        {Logos.map((Logos)=>{
+        return(
+            <motion.div className="item" key={Logos}>
+            <img src={Logos} alt=""/>
+            </motion.div>
+          );
+          })}
+        </motion.div>
+      </motion.div>
         </div>
 );
 }
