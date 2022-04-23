@@ -8,7 +8,7 @@ function Galeria(){
     return(
         <div className='galeria-container'>
         <h1>Galería</h1>
-        <Fotos/> 
+        <Fotos/>
         </div>
     ); 
 }
