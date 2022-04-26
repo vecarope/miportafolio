@@ -1,16 +1,29 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link  } from 'react-router-dom';
 import '../styleSheet/Navbar.css'; 
 
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () => setClick(false) 
+  const [ navbar, setNavBar]= useState (false); 
+
+  useEffect(() => {    
+    const fixedNavbar = () => {      
+    if (window.scrollY >= 80) {   
+    setNavBar(true);    
+    }
+    else if (window.scrollY <= 80)
+    { setNavBar(false);     
+    } }  
+    window.addEventListener("scroll", fixedNavbar);  
+    return () => { window.removeEventListener("scroll", fixedNavbar);
+  }  }, [] );
 
 
   return (
     <>
-      <nav className='navbar'>
+      <nav className={navbar ? 'navbar active' :'navbar'}>
         <div className='navbar-container'>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>

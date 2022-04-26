@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import Hero from '../Hero';
+import Texto from '../Texto'; 
 import Skill from '../Skill'
 import Portafolio from '../Portafolio';
 import Galeria from '../Galeria';
@@ -10,6 +11,7 @@ function Home() {
   return (
     <>
     <Hero/>
+    <Texto/>
     <Skill/>
     <Portafolio/>
     <Galeria/>

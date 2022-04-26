@@ -7,7 +7,7 @@ import Card from '../Card'
 function Trabajos() {
     return(
     <div>
-    <h1 className='trabajos'>Portafolio Web</h1>
+    <h1 className='trabajos'>PORTAFOLIO WEB</h1>
     <Card/>
     <Footer/>
     </div>

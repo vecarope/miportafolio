@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../styleSheet/About.css';
-import '../../App.css'; 
 import Footer from '../Footer'; 
 
 function About() {
