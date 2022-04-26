@@ -1,5 +1,4 @@
 import React from "react";
-import "../App.css";
 import { Button } from "./Button";
 import '../styleSheet/Hero.css';
 
@@ -15,7 +14,7 @@ function Hero() {
           buttonStyle="btn--outline"
           buttonSize="btn--large"
         >
-          GET STARTED
+          Descargar Curriculum
         </Button>
       </div>
     </div>

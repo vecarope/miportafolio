@@ -1,11 +1,40 @@
-  import html from '../assets/logos/html.png'; 
-  import js from "../assets/logos/js.png" ; 
-  import css from "../assets/logos/css.png" ; 
-  import git from "../assets/logos/git.png" ; 
-  import vue from "../assets/logos/vue.png" ; 
-  import react from "../assets/logos/react.png" ; 
-  import python from "../assets/logos/python.png" ; 
-  import figma from "../assets/logos/figma.png" ; 
-  import ps from "../assets/logos/ps.png" ; 
+import React from 'react'; 
+import '../styleSheet/Logos.css'; 
 
-  export default [html, js,css,git,vue,react,python, figma,ps]; 
+function Logos(){
+
+return(
+  <div className="slider-container">
+    <div className="slider-box"> 
+      <div className="slider">
+        <img src='../logos/html.png' alt="html"/>
+      </div>
+      <div className="slider">
+        <img src='../logos/css.png' alt="css" />
+      </div>
+      <div className="slider">
+        <img src='../logos/figma.png' alt="figma" />
+      </div>
+      <div className="slider">
+        <img src='../logos/git.png' alt="git" />
+      </div>
+      <div className="slider">
+        <img src='../logos/js.png' alt="js" />
+      </div>
+      <div className="slider">
+        <img src='../logos/ps.png' alt="ps" />
+      </div>
+      <div className="slider">
+        <img src='../logos/python.png' alt="python" />
+      </div>
+      <div className="slider">
+        <img src='../logos/react.png' alt="react" />
+      </div>
+      <div className="slider">
+        <img src='../logos/vue.png' alt="vue" />
+        </div>
+    </div>
+  </div>
+); 
+}
+export default Logos; 

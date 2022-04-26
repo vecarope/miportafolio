@@ -1,6 +1,5 @@
 import React from 'react';
 import Tarjeta from './Tarjeta'
-import '../App.css';
 import '../styleSheet/Portafolio.css'
 
 

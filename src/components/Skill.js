@@ -1,37 +1,73 @@
 import React from "react";
-import { motion } from 'framer-motion';
-import { useRef , useEffect, useState } from 'react'; 
-import Logos from './Logos';
-import '../App.css'; 
 import '../styleSheet/Carrusel.css';
+import '../styleSheet/Logos.css'; 
 
 
 function Skill() {
-  const [width, setWidth] = useState(0);
-  const carrusel= useRef(); 
+  return(
 
-  useEffect(()=> {
-    setWidth(carrusel.current.scrollWidth - carrusel.current.offsetWidth); 
-  }, []);
-    return(
-        <div className='skill-container'>
-        <h1>Mis Skills</h1>
-        <motion.div ref={carrusel} className="carrusel" whileTap={{cursor:'grabbing'}}>
-          <motion.div
-          drag="y"
-          dragConstraints={{right:0, left:-width}}
-          className="inner-carrusel">
-            {Logos.map((Logos)=>{
-              return(
-                <motion.div className="item" key={Logos}>
-                <img src={Logos} alt=""/>
-                </motion.div>
-              );
-              })}
-        </motion.div>
-      </motion.div>
+<div className="skill-container">
+<h1>Skill</h1>
+<div className="slider-container">
+    <div className="slider-box"> 
+      <div className="slider">
+        <img src='../logos/html.png' alt="html"/>
+      </div>
+      <div className="slider">
+        <img src='../logos/css.png' alt="css" />
+      </div>
+      <div className="slider">
+        <img src='../logos/figma.png' alt="figma" />
+      </div>
+      <div className="slider">
+        <img src='../logos/git.png' alt="git" />
+      </div>
+      <div className="slider">
+        <img src='../logos/js.png' alt="js" />
+      </div>
+      <div className="slider">
+        <img src='../logos/ps.png' alt="ps" />
+      </div>
+      <div className="slider">
+        <img src='../logos/python.png' alt="python" />
+      </div>
+      <div className="slider">
+        <img src='../logos/react.png' alt="react" />
+      </div>
+      <div className="slider">
+        <img src='../logos/vue.png' alt="vue" />
         </div>
-);
+        <div className="slider">
+        <img src='../logos/html.png' alt="html"/>
+      </div>
+      <div className="slider">
+        <img src='../logos/css.png' alt="css" />
+      </div>
+      <div className="slider">
+        <img src='../logos/figma.png' alt="figma" />
+      </div>
+      <div className="slider">
+        <img src='../logos/git.png' alt="git" />
+      </div>
+      <div className="slider">
+        <img src='../logos/js.png' alt="js" />
+      </div>
+      <div className="slider">
+        <img src='../logos/ps.png' alt="ps" />
+      </div>
+      <div className="slider">
+        <img src='../logos/python.png' alt="python" />
+      </div>
+      <div className="slider">
+        <img src='../logos/react.png' alt="react" />
+      </div>
+      <div className="slider">
+        <img src='../logos/vue.png' alt="vue" />
+        </div>
+    </div>
+  </div>
+</div>
+); 
 }
 
 export default Skill;
