@@ -1,5 +1,3 @@
-import React from 'react';
-import '../../App.css';
 import Hero from '../Hero';
 import Texto from '../Texto'; 
 import Skill from '../Skill'
@@ -15,7 +13,7 @@ function Home() {
     <Skill/>
     <Portafolio/>
     <Galeria/>
-    <Footer />
+    <Footer/>
     </>
   );
 }

@@ -1,8 +1,8 @@
 .skill-container {
   top:0; 
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  background-color: rgb(24, 16, 45);
+  background-color: #140123;
 }
 
 .item{
@@ -19,15 +19,14 @@
 }
 
 .inner-carrusel{
-  display:flex; 
-  background:white; 
+  display:flex;  
   min-width: 50px;
   min-height: 50px;
   
 }
 
 .carrusel{
+  padding-top: 150px;
   cursor: grab; 
   overflow: hidden;
-  background:red; 
 }

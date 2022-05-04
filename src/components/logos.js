@@ -1,4 +1,3 @@
-import React from 'react'; 
 import '../styleSheet/Logos.css'; 
 
 function Logos(){

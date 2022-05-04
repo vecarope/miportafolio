@@ -1,27 +1,27 @@
-import React from 'react'; 
 import "../styleSheet/Fotos.css";
 
 function Fotos(){
 return (
   <div className="grid-container">
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/933/900/900.jpg")`}}></div>
-  <div className="grid-item"  style={{backgroundImage:`url("https://picsum.photos/id/248/900/900.jpg")`}}></div>
-  <div className="grid-item"  style={{backgroundImage:`url("https://picsum.photos/id/234/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/423/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/534/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/176/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/73/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/943/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/248/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/945/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/947/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/69/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/943/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/248/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/945/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/947/900/900.jpg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/69/900/900.jpg")`}}></div>
- <div className="grid-item" style={{backgroundImage:`url("https://picsum.photos/id/65/900/900.jpg")`}}></div>
+  <div className="grid-item"  style={{backgroundImage:`url("/fotos/autral.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/ave1.jpeg")`}}></div>
+  <div className="grid-item"  style={{backgroundImage:`url("/fotos/ave2.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/maullin.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/pmc.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/astro.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/varas.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/ave3.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/congi4.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/puq3.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/puq6.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/soli.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/tree.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/puq4.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/puq8.jpeg")`}}></div>
+  <div className="grid-item" style={{backgroundImage:`url("/fotos/soli3.jpeg")`}}></div>
+ <div className="grid-item" style={{backgroundImage:`url("/fotos/osorno.jpeg")`}}></div>
+ <div className="grid-item" style={{backgroundImage:`url("/fotos/luna.jpeg")`}}></div>
+
 </div>
 
 ); 

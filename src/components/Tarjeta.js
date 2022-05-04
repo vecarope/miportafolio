@@ -8,9 +8,9 @@ function Tarjeta(){
   <div className='tarjeta-container'>
     <div className='card'>
     <div  id='card1'>
-    <img  className='front' src='../img/foto3.jpeg' alt="foto"/>
+    <img  className='front' src='../img/perrunos.png' alt="foto"/>
     <div className="inner">
-          <h>Cozy apartment</h>
+          <h>Pagina Perrunos</h>
           <label for="card1" className="button" aria-hidden="true">
             Código
           </label>

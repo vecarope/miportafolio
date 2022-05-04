@@ -1,6 +1,6 @@
 .cards {
     padding: 4rem;
-    background:#393E46;
+    background:transparent; 
 }
 
 h1 {
@@ -43,6 +43,7 @@ h1 {
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
+    background:#000; 
 }
 
 .cards__item__pic-wrap {

@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styleSheet/Galeria.css'; 
 import Fotos from './Fotos'; 
 

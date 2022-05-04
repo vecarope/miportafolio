@@ -1,4 +1,3 @@
-import React from "react";
 import '../styleSheet/Carrusel.css';
 import '../styleSheet/Logos.css'; 
 
@@ -7,14 +6,14 @@ function Skill() {
   return(
 
 <div className="skill-container">
-<h1>Skill</h1>
+<h1>Mis Skills</h1>
 <div className="slider-container">
     <div className="slider-box"> 
       <div className="slider">
         <img src='../logos/html.png' alt="html"/>
       </div>
       <div className="slider">
-        <img src='../logos/css.png' alt="css" />
+        <img src='../logos/css3.png' alt="css3" />
       </div>
       <div className="slider">
         <img src='../logos/figma.png' alt="figma" />
@@ -41,7 +40,7 @@ function Skill() {
         <img src='../logos/html.png' alt="html"/>
       </div>
       <div className="slider">
-        <img src='../logos/css.png' alt="css" />
+        <img src='../logos/css3.png' alt="css" />
       </div>
       <div className="slider">
         <img src='../logos/figma.png' alt="figma" />
