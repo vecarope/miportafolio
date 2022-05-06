@@ -4,8 +4,55 @@
     width: 100%;
     background-color: #251B3D;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction:column;
+    justify-content:space-around; 
     align-items: center;
 }
+
+
+.box-container{
+    display:flex; 
+    flex-direction: row;
+    
+}
+
+
+.text{
+display:flex; 
+align-items:flex-end; 
+height:20rem;
+width: 40rem;
+margin: auto; 
+text-align: justify;
+}
+
+
+
+p{
+
+color:lightblue; 
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight:100;
+font-size:x-large;
+}
+
+.img-container
+{ height:450px;
+    width:550px; 
+    align-items: end;
+    margin:auto; 
+    align-items:center; 
+
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .img-container {
+    display: none;
+    }
+    }
+
+
 

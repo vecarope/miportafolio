@@ -1,5 +1,6 @@
 .galeria-container{
-    height: 100vh;
+    padding-bottom: 30px;
+    height: 100%;
     width: 100%;
     background-color: #140123;
 }
@@ -7,3 +8,8 @@
 
 
 
+@media only screen and (max-width:880px){
+    .galeria-container{
+        display:none; 
+    }
+}

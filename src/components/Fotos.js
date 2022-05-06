@@ -18,10 +18,6 @@ return (
   <div className="grid-item" style={{backgroundImage:`url("/fotos/tree.jpeg")`}}></div>
   <div className="grid-item" style={{backgroundImage:`url("/fotos/puq4.jpeg")`}}></div>
   <div className="grid-item" style={{backgroundImage:`url("/fotos/puq8.jpeg")`}}></div>
-  <div className="grid-item" style={{backgroundImage:`url("/fotos/soli3.jpeg")`}}></div>
- <div className="grid-item" style={{backgroundImage:`url("/fotos/osorno.jpeg")`}}></div>
- <div className="grid-item" style={{backgroundImage:`url("/fotos/luna.jpeg")`}}></div>
-
 </div>
 
 ); 
